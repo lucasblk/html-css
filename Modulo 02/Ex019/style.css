@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* 
+Identificador em html = id (somente um por documento),  e em css = # (pode ter multiplos em um mesmo documento)
+Classe em html = class , e em css = .
+*/
+body {
+    background-color: rgb(208, 251, 208);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1#main {
+    text-align: center;
+    background-color: rgb(61, 79, 61);
+    color: white;
+}
+h1 {
+    color: rgb(117, 167, 117);
+}
+h2 {
+    color: rgb(61, 79, 61);
+}
+
+.basic {
+    color: green;
+}
+.intermediate {
+    color: rgb(111, 128, 0);
+}
+.advanced {
+    color: rgb(128, 0, 0);
+}

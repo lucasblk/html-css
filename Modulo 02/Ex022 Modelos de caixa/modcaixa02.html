@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        header {
+            background-color: rgb(91, 134, 148);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            margin: 20px;
+            
+        }
+        nav {
+            background-color: aquamarine;
+            box-shadow: 3px 5px 16px -5px black;
+        }
+        .principal {
+            text-align: center;
+        }
+        .secundario {
+            background-color: black;
+            color: white;
+            width: auto;
+        }
+        header > nav > a:hover {
+            color: rgb(255, 0, 0);
+        }
+        a {
+            color: white;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        main {
+            background-color: rgb(128, 187, 207);
+            font-family: 'Times New Roman', Times, serif;
+            color: lightgray;
+            text-align: justify;
+            padding: 20px;
+            margin: 15px;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 20px 0px;
+            box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.44);
+
+        }
+
+        article {
+            background-color: darkcyan;
+        }
+        main > section > article {
+            color: white;
+        }
+        footer {
+            background-color: black;
+            color: gold;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: lighter;
+            font-style: italic;
+        }
+        body {
+            background-color: rgb(218, 242, 253);
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="principal">Meu Prototipo de Site</h1>
+        <nav>
+            <a href="@">Link</a>
+            <a href="@">Link</a>
+            <a href="@">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 class="secundario">Ultimas Noticias</h2>
+            <article>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde aliquam ab dolorem exercitationem est praesentium explicabo? Ipsam doloribus vitae nulla, fugiat culpa veniam explicabo consequuntur facere aspernatur dignissimos accusamus voluptatem?</p>
+            </article>
+        </section>
+        <section>
+            <h2 class="secundario">Atualizacoes</h2>
+            <article>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem ullam autem totam dolor, vitae quo, quae nobis, hic qui atque exercitationem ipsa rerum voluptate debitis facilis? Sint animi rem ipsum!</p>
+            </article>
+        </section>
+        
+    </main>
+    <footer>
+        <p>Desenvolvido por Eu mesmo</p>
+    </footer>
+</body>
+</html>

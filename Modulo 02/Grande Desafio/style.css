@@ -1,0 +1,121 @@
+@charset "UTF-B";
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+body {
+    background-color: rgb(157, 255, 193);
+    margin: 0px;
+}
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 3px 3px rgb(0, 0, 0);
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(rgb(81, 240, 81), rgb(23, 74, 22));
+    padding-top: 10px;
+    height: 200px;
+}
+.shadow {
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.803);
+}
+nav {
+    text-align: left;
+    margin-top: 74px;
+    margin-right: 0px;
+    padding: 0px;
+
+}
+a {
+    background-color: rgba(12, 39, 12, 0.819);
+    color: white;
+    text-decoration: none;
+    padding: 0px;
+    margin-left: 0px;
+    border: 10px solid rgba(12, 39, 12, 0.819);
+    border-radius: 5px;
+}
+a:hover {
+    box-shadow: inset 1px 1px 1px 1px black;
+    background-color: rgba(0, 0, 0, 0.119);
+    border-color:rgba(0, 0, 0, 0.119) ;
+}
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    background-color: white;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.329);
+    border-radius: 5px;
+    padding: 4px 12px;
+
+}
+main > p {
+    text-indent: 20px;
+}
+.idroid {
+    font-family: 'idroid', Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right,rgb(172, 255, 172),rgb(255, 255, 255)90%);
+}
+.idroid2 {
+    font-family: 'idroid', Arial, Helvetica, sans-serif;
+     
+    
+}
+.bugdroid {
+    text-align: center;
+}
+.video {
+    background-color: rgb(33, 54, 41);
+    width: 650px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.329);
+    border-radius: 5px;
+    padding: 10px 12px;
+}
+.tabela {
+    text-decoration: underline;
+    text-align: left;
+    display: inline-block;
+    height: 209px;
+    width: 250px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 70px 0px 0px;
+
+}
+#titulo {
+    background-color: green;
+    color: white;
+    font-size: 18px;
+    padding: 10px 0px 10px 5px;
+    border-radius: 8px 8px 0px 0px;
+}
+section {
+    background-color: rgb(194, 248, 214);
+    border: 2px;
+    padding: 0px 0px 2px 0px;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.285);
+}
+main > section > p {
+    text-indent: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+footer {
+    text-align: center;
+    background-color: darkgreen;
+    color: white;
+    border-color: darkgreen;
+    padding: 2px 0px 2px 0px;
+    margin-top: 25px;
+
+}
