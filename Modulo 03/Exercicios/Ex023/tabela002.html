@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(211, 211, 211);
+            color: rgb(0, 0, 0);
+            border: 1px solid black;
+        }
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td,th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+        thead {
+            position: sticky;
+            top: 0px;
+            /*gruda no 'top' em 0 px de distancia da barra superior do navegador*/
+        }
+        td.numero {
+            text-align: right;
+        }
+        tfoot th {
+            text-align: right;
+        }
+        tbody tr:nth-child(2n) /*
+        odd - impar (2n-1)
+        even - par (2n)
+        */ {
+            background-color: rgb(202, 202, 202);
+        }
+    </style>
+</head>
+<body>
+    <h1>uso de tabelas grandes</h1>
+    <!--Anatomia para tabelas grandes
+    CAPTION (TITULO)
+        TABLE
+        THEAD
+            tr
+            td
+            th
+        TBODY  
+            tr
+            td
+            th
+        TFOOT
+            tr
+            td
+            th
+    
+    -->
+    <table>
+        <caption>Populacao Estadual</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">Populacao</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+               <td>Sao Paulo</td>
+               <td class="numero">44.411.238</td>     
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">20.538.718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">16 054 524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14.000.000</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="numero">11.054.524</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">10.054.524</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="numero">44.411.238</td>     
+             </tr>
+             <tr>
+                 <td>Minas Gerais</td>
+                 <td class="numero">20.538.718</td>
+             </tr>
+             <tr>
+                 <td>Rio de Janeiro</td>
+                 <td class="numero">16 054 524</td>
+             </tr>
+             <tr>
+                 <td>Bahia</td>
+                 <td class="numero">14.000.000</td>
+             </tr>
+             <tr>
+                 <td>Parana</td>
+                 <td class="numero">11.054.524</td>
+             </tr>
+             <tr>
+                 <td>Rio Grande do Sul</td>
+                 <td class="numero">10.054.524</td>
+             </tr>
+             <tr>
+                <td>Sao Paulo</td>
+                <td class="numero">44.411.238</td>     
+             </tr>
+             <tr>
+                 <td>Minas Gerais</td>
+                 <td class="numero">20.538.718</td>
+             </tr>
+             <tr>
+                 <td>Rio de Janeiro</td>
+                 <td class="numero">16 054 524</td>
+             </tr>
+             <tr>
+                 <td>Bahia</td>
+                 <td class="numero">14.000.000</td>
+             </tr>
+             <tr>
+                 <td>Parana</td>
+                 <td class="numero">11.054.524</td>
+             </tr>
+             <tr>
+                 <td>Rio Grande do Sul</td>
+                 <td class="numero">10.054.524</td>
+             </tr>
+             <tr>
+                <td>Sao Paulo</td>
+                <td class="numero">44.411.238</td>     
+             </tr>
+             <tr>
+                 <td>Minas Gerais</td>
+                 <td class="numero">20.538.718</td>
+             </tr>
+             <tr>
+                 <td>Rio de Janeiro</td>
+                 <td class="numero">16 054 524</td>
+             </tr>
+             <tr>
+                 <td>Bahia</td>
+                 <td class="numero">14.000.000</td>
+             </tr>
+             <tr>
+                 <td>Parana</td>
+                 <td class="numero">11.054.524</td>
+             </tr>
+             <tr>
+                 <td>Rio Grande do Sul</td>
+                 <td class="numero">10.054.524</td>
+             </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="numero"><strong>112.000.000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure consectetur qui, fugiat a ipsam modi deleniti optio, veniam facere assumenda eum asperiores perferendis dolorum dolore laborum ipsum laboriosam excepturi quidem</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque nam, autem molestias tempora enim fugit magnam. A, esse! Aperiam harum cum quae inventore, necessitatibus similique eius asperiores quia suscipit voluptate. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci cum commodi enim asperiores ea sed nobis id exercitationem, aliquid, recusandae accusantium ipsa totam fugit, culpa eos minima ex odio ab! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit quia, architecto soluta pariatur animi rem aliquid fuga. Voluptates quod enim quia quaerat dicta tenetur sint ipsa, inventore nam dolores velit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae similique praesentium explicabo possimus magni laudantium voluptate eveniet mollitia iusto, perferendis, quo nesciunt in culpa nobis odio! Tempore libero sequi esse.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure consectetur qui, fugiat a ipsam modi deleniti optio, veniam facere assumenda eum asperiores perferendis dolorum dolore laborum ipsum laboriosam excepturi quidem</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque nam, autem molestias tempora enim fugit magnam. A, esse! Aperiam harum cum quae inventore, necessitatibus similique eius asperiores quia suscipit voluptate. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci cum commodi enim asperiores ea sed nobis id exercitationem, aliquid, recusandae accusantium ipsa totam fugit, culpa eos minima ex odio ab! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit quia, architecto soluta pariatur animi rem aliquid fuga. Voluptates quod enim quia quaerat dicta tenetur sint ipsa, inventore nam dolores velit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae similique praesentium explicabo possimus magni laudantium voluptate eveniet mollitia iusto, perferendis, quo nesciunt in culpa nobis odio! Tempore libero sequi esse.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure consectetur qui, fugiat a ipsam modi deleniti optio, veniam facere assumenda eum asperiores perferendis dolorum dolore laborum ipsum laboriosam excepturi quidem</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque nam, autem molestias tempora enim fugit magnam. A, esse! Aperiam harum cum quae inventore, necessitatibus similique eius asperiores quia suscipit voluptate. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci cum commodi enim asperiores ea sed nobis id exercitationem, aliquid, recusandae accusantium ipsa totam fugit, culpa eos minima ex odio ab! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit quia, architecto soluta pariatur animi rem aliquid fuga. Voluptates quod enim quia quaerat dicta tenetur sint ipsa, inventore nam dolores velit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae similique praesentium explicabo possimus magni laudantium voluptate eveniet mollitia iusto, perferendis, quo nesciunt in culpa nobis odio! Tempore libero sequi esse.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure consectetur qui, fugiat a ipsam modi deleniti optio, veniam facere assumenda eum asperiores perferendis dolorum dolore laborum ipsum laboriosam excepturi quidem</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque nam, autem molestias tempora enim fugit magnam. A, esse! Aperiam harum cum quae inventore, necessitatibus similique eius asperiores quia suscipit voluptate. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci cum commodi enim asperiores ea sed nobis id exercitationem, aliquid, recusandae accusantium ipsa totam fugit, culpa eos minima ex odio ab! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit quia, architecto soluta pariatur animi rem aliquid fuga. Voluptates quod enim quia quaerat dicta tenetur sint ipsa, inventore nam dolores velit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae similique praesentium explicabo possimus magni laudantium voluptate eveniet mollitia iusto, perferendis, quo nesciunt in culpa nobis odio! Tempore libero sequi esse.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure consectetur qui, fugiat a ipsam modi deleniti optio, veniam facere assumenda eum asperiores perferendis dolorum dolore laborum ipsum laboriosam excepturi quidem</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque nam, autem molestias tempora enim fugit magnam. A, esse! Aperiam harum cum quae inventore, necessitatibus similique eius asperiores quia suscipit voluptate. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci cum commodi enim asperiores ea sed nobis id exercitationem, aliquid, recusandae accusantium ipsa totam fugit, culpa eos minima ex odio ab! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit quia, architecto soluta pariatur animi rem aliquid fuga. Voluptates quod enim quia quaerat dicta tenetur sint ipsa, inventore nam dolores velit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae similique praesentium explicabo possimus magni laudantium voluptate eveniet mollitia iusto, perferendis, quo nesciunt in culpa nobis odio! Tempore libero sequi esse.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure consectetur qui, fugiat a ipsam modi deleniti optio, veniam facere assumenda eum asperiores perferendis dolorum dolore laborum ipsum laboriosam excepturi quidem</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque nam, autem molestias tempora enim fugit magnam. A, esse! Aperiam harum cum quae inventore, necessitatibus similique eius asperiores quia suscipit voluptate. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci cum commodi enim asperiores ea sed nobis id exercitationem, aliquid, recusandae accusantium ipsa totam fugit, culpa eos minima ex odio ab! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit quia, architecto soluta pariatur animi rem aliquid fuga. Voluptates quod enim quia quaerat dicta tenetur sint ipsa, inventore nam dolores velit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae similique praesentium explicabo possimus magni laudantium voluptate eveniet mollitia iusto, perferendis, quo nesciunt in culpa nobis odio! Tempore libero sequi esse.</p>
+    
+</body>
+</html>
