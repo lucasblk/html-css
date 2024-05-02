@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox e radio button</title>
+</head>
+<body>
+    <h1>Testando CheckBox e Radio Button</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+
+          
+                <label for="sexo">Masculino</label> <input type="radio" name="sexo" id="imasc" value="M"><br>
+            
+                <label for="sexo">Feminino</label> <input type="radio" name="sexo" id="ifemi" value="F">
+            
+         <!--quando usa o tipo RADIO eh pra marcar apenas uma opcao no formulario, mas precisa usar o mesmo NAME com IDs diferentes-->
+            
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Esporte Favorito</legend>
+            <input type="checkbox" name="fut" id="ifut"><label for="ifut">Futebol</label></input><br>
+            <input type="checkbox" name="nat" id="inat"><label for="inat">Natacao</label></input><br>
+            <input type="checkbox" name="bas" id="ibas"><label for="ibas">Basquete</label></input><br>
+            <input type="checkbox" name="kun" id="ikun"><label for="ikun">Kung Fu</label></input><br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </p>
+
+
+
+    </form>
+</body>
+</html>
