@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+</head>
+<body>
+    <h1>Output</h1>
+    <form action="cadastro.php" method="get">
+
+    <p>
+        <label for="inascimento">Seu ano de nascimento:</label>
+        <input type="number" name="nascimento" id="inascimento" min="1930" max="2024" oninput="calcIdade()">
+    </p>
+    <p>
+        <label for="idade">Sua idade:</label>
+        <output id="idade">0</output>
+    </p>
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Resetar">
+    </p>
+
+    </form>
+<script>
+    function calcIdade() {
+        let atual = new Date().getFullYear()
+        idade.innerHTML = Number(atual) - Number(inascimento.value)
+    }
+</script>
+</body>
+</html>
