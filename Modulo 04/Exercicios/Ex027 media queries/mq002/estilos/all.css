@@ -1,1 +1,18 @@
 @charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+body h1 {
+    
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.495);
+    color: white;
+}
+
+body {
+    background-color: rgb(48, 48, 255);
+}
