@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQ005</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu Site</h1>
+        <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+        <menu id="opcs">
+            <ul>
+                <a href="#"><li>Opc1</li></a>
+                <a href="#"><li>Opc2</li></a>
+                <a href="#"><li>Opc3</li></a>
+                <a href="#"><li>Opc4</li></a>
+                <a href="#"><li>Opc5</li></a>
+            </ul>
+        </menu>
+    </header>
+   <main>
+        <article>
+            <h2>Testando MQ</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit accusantium ipsa atque aperiam voluptas cumque iure esse maxime a deleniti quam, consequatur quia aspernatur error quibusdam ipsam perspiciatis, eius fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore itaque delectus nesciunt enim? Maxime facilis corrupti distinctio aperiam beatae cum, voluptas consectetur impedit unde excepturi molestiae eius quasi. Magni, eligendi?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit aspernatur iste dolor ratione incidunt unde velit qui odio harum. Eum enim maiores tempore asperiores, explicabo est quia adipisci veritatis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem doloribus similique a reiciendis quis alias ea sed placeat fugit commodi sit, perferendis at, voluptatem mollitia animi modi molestias suscipit ad. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis quae dolore culpa voluptatem maxime quia corporis quam, ipsam animi dolorem qui libero beatae maiores dolor incidunt sed ut quidem dolorum?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem fugiat et illum iste repellendus aperiam fuga officia pariatur sequi facilis maxime, cum incidunt odit natus, nobis eligendi blanditiis esse. Suscipit.</p>
+        </article>
+   </main>
+   <script>
+    function mudouTamanho() {
+        if (window.innerWidth >= 768) {
+            opcs.style.display = 'block'}
+            else {opcs.style.display = 'none'
+        }
+    }
+    function clickMenu() {
+        if (opcs.style.display == 'block') {
+            opcs.style.display = 'none'}
+        else {
+            opcs.style.display = 'block'}
+    }
+   </script>
+</body>
+</html>
